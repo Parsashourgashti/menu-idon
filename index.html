@@ -208,6 +208,49 @@ section{
     line-height:1.8;
 }
 
+/* SANDWICH CARDS */
+.sandwich-card{
+    background:white;
+    border-radius:18px;
+    margin-bottom:13px;
+    padding:13px;
+    box-shadow:0 3px 14px rgba(0,0,0,.07);
+    border:1px solid rgba(0,0,0,.05);
+}
+.sandwich-top{
+    display:flex;
+    align-items:center;
+    gap:13px;
+}
+.sandwich-image{
+    display:block;
+    width:100px;
+    height:100px;
+    flex:0 0 100px;
+    object-fit:cover;
+    border-radius:15px;
+    background:#f4eee7;
+}
+.sandwich-card h3{
+    margin:0;
+    color:#8d1717;
+    font-size:16px;
+    line-height:1.8;
+}
+.sandwich-card .prices{
+    display:block;
+    margin-top:10px;
+}
+.sandwich-card .price{
+    display:inline-block;
+    min-width:80px;
+    padding:8px 14px;
+}
+@media(max-width:600px){
+    .sandwich-image{width:82px;height:82px;flex-basis:82px;}
+    .sandwich-card h3{font-size:14px;}
+}
+
 /* SPECIAL INFO */
 
 .special-info{
@@ -944,12 +987,53 @@ footer{
 <h2>ساندویچ</h2>
 </div>
 
-<div class="simple-item">ساندویچ مرغ با نان مخصوص</div>
-<div class="simple-item">ساندویچ گوشت با نان مخصوص ایدون</div>
-<div class="simple-item">هات داگ کلاسیک</div>
-<div class="simple-item">ژامبون مرغ</div>
-<div class="simple-item">ژامبون گوشت</div>
-<div class="simple-item">مخلوط ژامبون گوشت، مرغ و چیپس</div>
+<div class="sandwich-card">
+  <div class="sandwich-top">
+    <img class="sandwich-image" src="images/morgh.jpg" alt="ساندویچ مرغ با نان مخصوص" loading="lazy">
+    <h3>ساندویچ مرغ با نان مخصوص</h3>
+  </div>
+  <div class="prices"><div class="price"><strong>520</strong></div></div>
+</div>
+
+<div class="sandwich-card">
+  <div class="sandwich-top">
+    <img class="sandwich-image" src="images/gousht.jpg" alt="ساندویچ گوشت با نان مخصوص ایدون" loading="lazy">
+    <h3>ساندویچ گوشت با نان مخصوص ایدون</h3>
+  </div>
+  <div class="prices"><div class="price"><strong>530</strong></div></div>
+</div>
+
+<div class="sandwich-card">
+  <div class="sandwich-top">
+    <img class="sandwich-image" src="images/hotdog-tanori.jpg" alt="ساندویچ هات داگ کلاسیک" loading="lazy">
+    <h3>ساندویچ هات داگ کلاسیک</h3>
+  </div>
+  <div class="prices"><div class="price"><strong>365</strong></div></div>
+</div>
+
+<div class="sandwich-card">
+  <div class="sandwich-top">
+    <img class="sandwich-image" src="images/zhambon-morgh.jpg" alt="ساندویچ ژامبون مرغ" loading="lazy">
+    <h3>ساندویچ ژامبون مرغ</h3>
+  </div>
+  <div class="prices"><div class="price"><strong>330</strong></div></div>
+</div>
+
+<div class="sandwich-card">
+  <div class="sandwich-top">
+    <img class="sandwich-image" src="images/zhambon-gousht.jpg" alt="ساندویچ ژامبون گوشت" loading="lazy">
+    <h3>ساندویچ ژامبون گوشت</h3>
+  </div>
+  <div class="prices"><div class="price"><strong>330</strong></div></div>
+</div>
+
+<div class="sandwich-card">
+  <div class="sandwich-top">
+    <img class="sandwich-image" src="images/zhambon-mix.jpg" alt="مخلوط ژامبون گوشت، مرغ و چیپس" loading="lazy">
+    <h3>مخلوط ژامبون گوشت، مرغ و چیپس</h3>
+  </div>
+  <div class="prices"><div class="price"><strong>330</strong></div></div>
+</div>
 
 </section>
 
@@ -963,10 +1047,40 @@ footer{
 <h2>سالاد</h2>
 </div>
 
-<div class="simple-item">سالاد سزار</div>
-<div class="simple-item">سالاد فصل: کاهو، گوجه، خیار، هویج و سبزیجات فصل</div>
-<div class="simple-item">سالاد کاستلا: کلم سفید، هویج، سبزیجات و سس مخصوص</div>
-<div class="simple-item">سالاد یونانی: کاهو، گوجه، خیار، فلفل دلمه، زیتون، پیاز، پنیر سفید و سبزیجات معطر</div>
+<div class="sandwich-card">
+  <div class="sandwich-top">
+    <img class="sandwich-image" src="images/salad-sezar.jpg" alt="سالاد سزار" loading="lazy">
+    <h3>سالاد سزار</h3>
+  </div>
+  <div class="prices"><div class="price"><strong>600</strong></div></div>
+</div>
+
+<div class="sandwich-card">
+  <div class="sandwich-top">
+    <img class="sandwich-image" src="images/salad-fasl.jpg" alt="سالاد فصل" loading="lazy">
+    <h3>سالاد فصل</h3>
+  </div>
+  <div class="ingredients">کاهو، گوجه، خیار، هویج و سبزیجات فصل</div>
+  <div class="prices"><div class="price"><strong>100</strong></div></div>
+</div>
+
+<div class="sandwich-card">
+  <div class="sandwich-top">
+    <img class="sandwich-image" src="images/salad-castela.jpg" alt="سالاد کاستلا" loading="lazy">
+    <h3>سالاد کاستلا</h3>
+  </div>
+  <div class="ingredients">کلم سفید، هویج، سبزیجات و سس مخصوص</div>
+  <div class="prices"><div class="price"><strong>80</strong></div></div>
+</div>
+
+<div class="sandwich-card">
+  <div class="sandwich-top">
+    <img class="sandwich-image" src="images/salad-younani.jpg" alt="سالاد یونانی" loading="lazy">
+    <h3>سالاد یونانی</h3>
+  </div>
+  <div class="ingredients">کاهو، گوجه، خیار، فلفل دلمه، زیتون، پیاز، پنیر سفید و سبزیجات معطر</div>
+  <div class="prices"><div class="price"><strong>150</strong></div></div>
+</div>
 
 </section>
 
